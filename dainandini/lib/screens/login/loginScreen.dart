@@ -1,0 +1,32 @@
+import 'package:dainandini/screens/login/myLoginForm.dart';
+import 'package:flutter/material.dart';
+
+class myLoginPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Row (
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+      Expanded(
+        child: ListView(
+          padding: EdgeInsets.all(20.0),
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 40.0),
+              child: Image.asset(
+                'assets/images/logo.png',
+              ),
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            loginForm(),
+          ],
+        ),
+      ),
+        ],
+      ),
+    );
+  }
+}
